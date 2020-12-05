@@ -51,8 +51,8 @@ function setup() {
 function draw() {
 
   translate(width/2, height);
-  branch (70); 
-  //line(0, 0, 0, -len);
+  //branch (70); 
+  line(0, 0, 0, -len);
  
   if((key=='B')||(key=='b'))
     {
@@ -91,23 +91,23 @@ function keyPressed () {
 }
 
 
-function branch (len) {
-  stroke(0);
-  line (0,0,0,-len);
-  translate (0,-len);
+// function branch (len) {
+//   stroke(0);
+//   line (0,0,0,-len);
+//   translate (0,-len);
   
-  if (len > 4) {
-    push(); //to have the branching come back 
-    rotate (PI/4);
-    branch (len * 0.67);
-    pop();
+//   if (len > 4) {
+//     push(); //to have the branching come back 
+//     rotate (PI/4);
+//     branch (len * 0.67);
+//     pop();
 
-    //push();
-    rotate (-PI/4);
-    branch (len * 0.67);
-    //pop();
-  }  
-}
+//     //push();
+//     rotate (-PI/4);
+//     branch (len * 0.67);
+//     //pop();
+//   }  
+// }
 
 
       //with every mouse press, branch one next
